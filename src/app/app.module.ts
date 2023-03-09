@@ -16,6 +16,7 @@ import {MatCardModule} from '@angular/material/card';
 import { ContactComponent } from './contact/contact.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 
+
 @NgModule({
   declarations: [
     AppComponent,
