@@ -14,6 +14,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { DetailsComponent } from './details/details.component';
 import {MatCardModule} from '@angular/material/card';
 import { ContactComponent } from './contact/contact.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ContactComponent } from './contact/contact.component';
     MatTabsModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    SlickCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
