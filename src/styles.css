@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+.mdc-tab .mdc-tab__text-label{
+    color: gray !important;
+}
+.mdc-tab--active .mdc-tab__text-label{
+    color: rgb(79, 10, 75) !important;
+}
