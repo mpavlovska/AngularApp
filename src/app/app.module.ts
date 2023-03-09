@@ -1,8 +1,7 @@
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatButtonModule} from '@angular/material/button';
+import {MatButtonModule} from '@angular/material/button'; 
 import {MatIconModule} from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs';
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -12,10 +11,20 @@ import {HomeComponent} from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DetailsComponent } from './details/details.component';
-import {MatCardModule} from '@angular/material/card';
+import {MatCardModule} from '@angular/material/card'; 
 import { ContactComponent } from './contact/contact.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; 
+
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { FormAddComponent } from './form-add/form-add.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
+import { CardsComponent } from './cards/cards.component'; 
 
 @NgModule({
   declarations: [
@@ -25,20 +34,31 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     AboutUsComponent,
     DetailsComponent,
     ContactComponent,
-  ],
+    FormAddComponent,
+    CardsComponent
+  ], 
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
-    MatButtonModule,
-    MatIconModule,
     MatTabsModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatCardModule,
     SlickCarouselModule,
+    MatFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSelectModule,
+    MatInputModule,
+    MatButtonModule,
+    MatIconModule,
+    
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
+  exports: [AppRoutingModule]
+
 })
 export class AppModule { }

@@ -1,11 +1,3 @@
-.centar-map{
-    width:700px; 
-    margin: auto;
-    opacity: 60%;
-    margin-top: 70px;
-} 
-
-
 .example-form {
     min-width: 150px;
     max-width: 500px;
@@ -14,4 +6,8 @@
   
   .example-full-width {
     width: 100%;
+  }
+  
+  td {
+    padding-right: 8px;
   }
