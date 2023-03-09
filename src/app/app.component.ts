@@ -1,5 +1,16 @@
 import { Component } from '@angular/core';
+import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap/nav/nav.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; 
+import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
+import {ErrorStateMatcher} from '@angular/material/core';
 
+/** Error when invalid control is dirty, touched, or submitted. */
+export class MyErrorStateMatcher implements ErrorStateMatcher {
+  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
+    const isSubmitted = form && form.submitted;
+    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
+  }
+}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +18,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularapp';
+  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
+
+  matcher = new MyErrorStateMatcher();
 }
