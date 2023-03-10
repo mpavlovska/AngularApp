@@ -4,15 +4,23 @@
 /* @import "~ngx-slick-carousel/slick/slick.css"; */
 
 .mdc-tab .mdc-tab__text-label{
-    color: gray !important;
+    color: white!important;
+    opacity: 90%;
+   
 }
 .mdc-tab--active .mdc-tab__text-label{
-    color: rgb(79, 10, 75) !important;
+    color: rgb(79, 10, 75) ;
 }
-
-body{
-    background-image: url("src/assets/angular.jpeg"); 
-    background-size: cover;
-}
-
+.navbar-font {
+    font-family: fantasy;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+    
+    
+  }
   
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

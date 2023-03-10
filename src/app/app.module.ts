@@ -24,7 +24,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     HomeComponent,
     AboutUsComponent,
     DetailsComponent,
-    ContactComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
