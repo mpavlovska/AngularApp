@@ -5,15 +5,19 @@ import { ContactComponent } from './contact/contact.component';
 import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
 
+import { CardsComponent } from './cards/cards.component';
+import { FormAddComponent } from './form-add/form-add.component';
+
 const routes: Routes = [
+  { path: 'create/:id/:i', component: FormAddComponent},
+  { path: 'cards/:id', component: CardsComponent},
   {path: 'home', component: HomeComponent, pathMatch:'full'},
   {path: 'contact', component: ContactComponent, pathMatch:'full'},
   {path: 'about-us', component: AboutUsComponent, pathMatch:'full'},
   {path: 'details', component: DetailsComponent, pathMatch:'full'},
   {path: '**', redirectTo: 'home'},
-  
 
-];
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

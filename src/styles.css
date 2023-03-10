@@ -18,9 +18,28 @@
     
     
   }
-  
-
-
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } 
+
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+/* @import "~ngx-slick-carousel/slick/slick.css"; */
+
+.mdc-tab .mdc-tab__text-label{
+    color: gray !important;
+}
+.mdc-tab--active .mdc-tab__text-label{
+    color: rgb(79, 10, 75) !important;
+}
+
+body{
+    background-image: url("src/assets/angular.jpeg"); 
+    background-size: cover;
+}
+
+  
+
