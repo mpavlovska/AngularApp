@@ -2,30 +2,32 @@
 
     <form class="example-form" #form="ngForm" [formGroup]="subForm" (ngSubmit)="onFormSubmit()">
       <mat-form-field class="example-full-width">
-        <mat-label>Name of the place</mat-label>
+        <mat-label>Име на местото</mat-label>
         <input formControlName="name"  matInput [errorStateMatcher]="matcher"
-               placeholder="Ex. sharr mountain">
+               placeholder="Титов врв">
         <mat-error *ngIf="!subForm.get('name')?.valid">
-          Please enter a name for the place!
+          Внесете име на местото!
         </mat-error>
       
       </mat-form-field>
         <mat-form-field class="example-full-width">
-          <mat-label>Location</mat-label>
-          <input formControlName="location" matInput placeholder="Ex. Skopje" value="Skopje">
+          <mat-label>Локација</mat-label>
+          <input formControlName="location" matInput placeholder="Шар планина" value="Skopje">
           <mat-error *ngIf="!subForm.get('location')?.valid">
-            Location is <strong>required</strong>
+           Локацијата е <strong>задолжителна.</strong>
           </mat-error>
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
-            <mat-label>Image url</mat-label>
+            <mat-label>Слика - урл</mat-label>
             <input formControlName="src" matInput placeholder="" value="">
-            
+            <mat-error *ngIf="!subForm.get('src')?.valid">
+              Локацијата е <strong>задолжителна.</strong>
+             </mat-error>
           </mat-form-field>
 
           <mat-form-field class="example-full-width">
-            <mat-label>Map tag</mat-label>
+            <mat-label>Мапа</mat-label>
             <input formControlName="map" matInput placeholder="" value="">
           
           </mat-form-field>
@@ -40,18 +42,12 @@
         </mat-form-field> -->
       
         <mat-form-field class="example-full-width">
-          <mat-label>Description</mat-label>
-          <textarea formControlName="description" matInput placeholder="Ex. It makes me feel..."></textarea>
+          <mat-label>Опис</mat-label>
+          <textarea formControlName="description" matInput placeholder="Титов врв се наоѓа..."></textarea>
         </mat-form-field>
-        <button mat-raised-button [disabled]="!form.valid" (click)="onFormSubmit()" ><a [routerLink]="['/cards',id]">Submit</a></button> 
-        <button mat-raised-button color="primary" type="button" (click)="cancel()">Cancel</button>
+        <button mat-raised-button [disabled]="!form.valid" (click)="onFormSubmit()" >Зачувај</button> 
+        <button mat-raised-button color="primary" type="button" (click)="cancel()">Откажи</button>
     
-        <a mat-mini-fab matTooltip="Link" routerLink="." aria-label="Example mini fab with a heart icon">
-          <mat-icon>favorite</mat-icon>
-        </a>
-        <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
-          <mat-icon>more_vert</mat-icon>
-        </button>
     
     </form>
     

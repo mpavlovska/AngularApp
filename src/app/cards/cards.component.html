@@ -11,13 +11,13 @@
     [src]="card.src" alt="Photo">
     
     <mat-card-actions>
-        <a  mat-mini-fab matTooltip="Link" routerLink="." aria-label="Example mini fab with a heart icon">
+        <a (click)="likeItem(i,card.name)"  [style.background-color]="(card.favorite) ? 'red' : 'white'" mat-mini-fab matTooltip="Link" routerLink="." aria-label="Example mini fab with a heart icon">
             <mat-icon>favorite</mat-icon>
           </a>
-      <!-- <button mat-button><a routerLink="/create">Learn more</a></button> -->
+      <button mat-button><a [routerLink]="['/details', id, i]">Дознај повеќе</a></button>
 
-      <button mat-button  (click)="deleteItem(card.name)">Delete</button>
-      <button mat-button><a [routerLink]="['/create', id, i]">Edit</a></button>
+      <button mat-button  (click)="deleteItem(card.name)">Избриши</button>
+      <button mat-button (click)="editItem(i)" >Уреди</button>
       
     </mat-card-actions>
   </mat-card>
@@ -27,8 +27,8 @@
   <mat-card  class="example-card">
     <mat-card-header>
       <div mat-card-avatar ></div>
-      <mat-card-title>Add new place</mat-card-title>
-      <mat-card-subtitle>Place</mat-card-subtitle>
+      <mat-card-title>Додади ново место</mat-card-title>
+      <mat-card-subtitle>Место</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image class="image-custom"
     src='./assets/add-2935429_960_720.webp'  alt="Photo">
@@ -36,10 +36,10 @@
       
     </mat-card-content>
     <mat-card-actions>
-        <a mat-mini-fab matTooltip="Link" routerLink="." aria-label="Example mini fab with a heart icon">
+        <a mat-mini-fab style="background-color: white;" matTooltip="Link"  aria-label="Example mini fab with a heart icon">
             <mat-icon>favorite</mat-icon>
           </a>
-      <button mat-button ><a [routerLink]="['/create', id,'']">Click to add</a></button>
+      <button mat-button ><a [routerLink]="['/create', id,'']">Кликни да додадеш</a></button>
     </mat-card-actions>
   </mat-card>
 </div>

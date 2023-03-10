@@ -1,6 +1,19 @@
-<p>details works!</p>
-<div>
-  <mat-card>
-  <mat-card-content>Simple card</mat-card-content>
+<div *ngIf="card!=undefined">
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{card.name}}</mat-card-title>
+      <mat-card-subtitle>{{card.location}}</mat-card-subtitle>
+      </mat-card-title-group>
+     
+    
+  </mat-card-header>
+  <mat-card-content>
+    <div style="display: flex;">
+   <div style="display: inline-block;max-width: 600px;margin-top: 30px;margin-right: 50px;"> {{card.description}} </div>
+    <img style="display: inline-block;border-radius:90px" class="img-custom" mat-card-xl-image src="{{ card.src }}" >
+  </div>
+  </mat-card-content>
 </mat-card>
 </div>
+

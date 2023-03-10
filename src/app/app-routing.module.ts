@@ -7,14 +7,16 @@ import { HomeComponent } from './home/home.component';
 
 import { CardsComponent } from './cards/cards.component';
 import { FormAddComponent } from './form-add/form-add.component';
+import { FavoriteComponent } from './favorite/favorite.component';
 
 const routes: Routes = [
   { path: 'create/:id/:i', component: FormAddComponent},
   { path: 'cards/:id', component: CardsComponent},
+  { path: 'favorite', component: FavoriteComponent},
   {path: 'home', component: HomeComponent, pathMatch:'full'},
   {path: 'event', component: EventComponent, pathMatch:'full'},
   {path: 'about-us', component: AboutUsComponent, pathMatch:'full'},
-  {path: 'details', component: DetailsComponent, pathMatch:'full'},
+  {path: 'details/:id/:i', component: DetailsComponent},
   {path: '**', redirectTo: 'home'},
 
 ]

@@ -22,7 +22,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import { CardsComponent } from './cards/cards.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './footer/footer.component'; 
+import { FavoriteComponent } from './favorite/favorite.component'; 
 
 @NgModule({ 
   declarations: [
@@ -34,7 +35,8 @@ import { FooterComponent } from './footer/footer.component';
     FormAddComponent,
     CardsComponent,
     EventComponent,
-    FooterComponent
+    FooterComponent,
+    FavoriteComponent
   ], 
   imports: [
     BrowserModule,
