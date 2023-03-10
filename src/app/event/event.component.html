@@ -1,0 +1,88 @@
+<div class="about-us">
+  <div class="carousel-wrapper-e">
+    <div style="width: 1500px;margin-top: 20px">
+      <div class="left-text">
+        <p class="title">Најпопуларни настани во Македонија</p>
+      </div>
+      <div style="margin-left: 80px;">
+      <ngx-slick-carousel 
+        class="carousel right-carousel"
+        [config]="{ slidesToShow: 2, slidesToScroll: 1, autoplay: true }"
+      >
+        <div class="img-car" ngxSlickItem *ngFor="let url of imageUrls">
+          <img src="{{ url }}" alt="Image" class="slide-img" />
+        </div>
+      </ngx-slick-carousel>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="width: 1000px; margin-left: 15%">
+  <mat-card style="margin-bottom: 5px; margin-top:15px">
+    <mat-card-header>
+      <mat-card-title>Wizz Air Skopje Marathon</mat-card-title>
+    </mat-card-header>
+    <mat-card-actions>
+      <button mat-button>
+        <a href="http://www.skopjemarathon.com/">Линк до настанот</a>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  <mat-card style="margin-bottom: 5px">
+    <mat-card-header>
+      <mat-card-title>Здраво млади</mat-card-title>
+    </mat-card-header>
+    <mat-card-actions style="margin-bottom: 5px">
+      <button mat-button>
+        <a href="https://mkc.mk/event/zdravo-mladi-12/">Линк до настанот</a>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  <mat-card style="margin-bottom: 5px;">
+    <mat-card-header>
+      <mat-card-title>Златна бубамара на популарноста</mat-card-title>
+    </mat-card-header>
+    <mat-card-actions>
+      <button mat-button>
+        <a href="https://zlatnabubamara.mk/">Линк до настанот</a>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  <mat-card style="margin-bottom: 5px">
+    <mat-card-header>
+      <mat-card-title>Ohrid Calling</mat-card-title>
+    </mat-card-header>
+    <mat-card-actions>
+      <button mat-button>
+        <a
+          href="https://avalon.mk/ns-newsarticle-ohrid-calling-2022-od-29-juli-do-01-avgust.nspx"
+          >Линк до настанот</a
+        >
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  <mat-card style="margin-bottom: 5px">
+    <mat-card-header>
+      <mat-card-title>Skopje Calling</mat-card-title>
+    </mat-card-header>
+    <mat-card-actions>
+      <button mat-button>
+        <a
+          href="https://www.soundclub.com/festivals/skopje-calling-2023/6026/about"
+          >Линк до настанот</a
+        >
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  <mat-card style="margin-bottom: 5px">
+    <mat-card-header>
+      <mat-card-title>DFestival</mat-card-title>
+    </mat-card-header>
+    <mat-card-actions>
+      <button mat-button>
+        <a href="https://dfestival.mk/en/">Линк до настанот</a>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

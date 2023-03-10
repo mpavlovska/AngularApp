@@ -12,30 +12,26 @@ import { HttpClientModule } from '@angular/common/http';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DetailsComponent } from './details/details.component';
 import {MatCardModule} from '@angular/material/card'; 
-import { ContactComponent } from './contact/contact.component';
+import { EventComponent } from './event/event.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; 
-
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormAddComponent } from './form-add/form-add.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
-import { CardsComponent } from './cards/cards.component'; 
+import { CardsComponent } from './cards/cards.component';
 
-@NgModule({
+@NgModule({ 
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
     AboutUsComponent,
     DetailsComponent,
-    ContactComponent,
     FormAddComponent,
-    CardsComponent
+    CardsComponent,
+    EventComponent
   ], 
   imports: [
     BrowserModule,
