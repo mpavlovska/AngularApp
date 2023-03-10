@@ -1,5 +1,5 @@
 <!-- <div style="color:white;" *ngIf="cards.length==0" > Немаш омилени места во твојата листа. <a routerLink="/home">Кликни тука да избереш локација!</a> </div> -->
-<div *ngIf="cards.length<=0" >
+<!-- <div *ngIf="cards.length<=0" >
     
     
     <input type="checkbox" name="" id="chkBox">
@@ -19,17 +19,17 @@
     </div>
     </div>
     </div>
-    </div>
-    <div *ngIf="cards.length<=0" >
+    </div>-->
+    <div *ngIf="cards.length<=0" style="margin-top:250px;margin-bottom: 500px;opacity: 70%;" >
     <mat-card>
         <mat-card-header>
-          <mat-card-title>Омилени места</mat-card-title>
+          <mat-card-title style="padding-left:480px">Немаш омилени места во твојата листа!</mat-card-title>
         </mat-card-header>
-        <mat-card-content align="end">
-          Немаш омилени места во твојата листа!
+        <mat-card-content style="padding-left:500px" >
+          <a routerLink="/home">Кликни тука избери локација и најди ги своите омилени!</a>
         </mat-card-content>
       </mat-card>
-    </div>
+    </div> 
 
 
 <div *ngIf="cards.length>0" style="display:flex;margin-left: 50px;margin-top: 100px;">
