@@ -6,6 +6,7 @@ export class Card{
     public headersrc:string
     public description:string
     public map:string
+    public favorite:boolean
     
     constructor (  name:string,
          location: string,
@@ -20,6 +21,7 @@ export class Card{
                     this.headersrc=headersrc
                     this.description=description
                     this.map=map
+                    this.favorite=false
                   }
     
     }

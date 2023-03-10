@@ -24,7 +24,8 @@ import { FormAddComponent } from './form-add/form-add.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
-import { CardsComponent } from './cards/cards.component'; 
+import { CardsComponent } from './cards/cards.component';
+import { FavoriteComponent } from './favorite/favorite.component'; 
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CardsComponent } from './cards/cards.component';
     DetailsComponent,
     ContactComponent,
     FormAddComponent,
-    CardsComponent
+    CardsComponent,
+    FavoriteComponent
   ], 
   imports: [
     BrowserModule,

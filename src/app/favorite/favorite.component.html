@@ -1,0 +1,61 @@
+<!-- <div style="color:white;" *ngIf="cards.length==0" > Немаш омилени места во твојата листа. <a routerLink="/home">Кликни тука да избереш локација!</a> </div> -->
+<div *ngIf="cards.length<=0" >
+    
+    
+    <input type="checkbox" name="" id="chkBox">
+    <div class="mainContnt">
+    <div class="box">
+    <div class="boxes bx1"></div>
+    <div class="boxes bx2">
+    <h3>Претплатете се:</h3>
+    <div class="login-form">
+    <input type="text" placeholder="Име">
+    <input type="email" placeholder="Емаил">
+    <input type="submit" value="Испрати">
+    </div>
+    <div class="close-box">
+    <label for="chkBox" class="box-close">X</label>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div *ngIf="cards.length<=0" >
+    <mat-card>
+        <mat-card-header>
+          <mat-card-title>Омилени места</mat-card-title>
+        </mat-card-header>
+        <mat-card-content align="end">
+          Немаш омилени места во твојата листа!
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+
+<div *ngIf="cards.length>0" style="display:flex;margin-left: 50px;margin-top: 100px;">
+
+    <div class="card-custom" *ngFor="let card of cards;let i=index">
+    <mat-card  class="example-card" *ngIf="card?.src">
+        <mat-card-header>
+          <div mat-card-avatar [style.background-image]="card.headersrc"></div>
+          <mat-card-title>{{card.name}}</mat-card-title>
+          <mat-card-subtitle>{{card.location}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image class="image-custom"
+        [src]="card.src" alt="Photo">
+        
+        <mat-card-actions>
+            <a  mat-mini-fab style="background-color: red;" (click)="unlikeItem(card.name)" matTooltip="Link" routerLink="." aria-label="Example mini fab with a heart icon">
+                <mat-icon>favorite</mat-icon>
+              </a>
+          <button mat-button><a (click)="detailsItem(card.name)">Learn more</a></button>
+    
+          <!-- <button mat-button  (click)="deleteItem(card.name)">Delete</button>
+          <button mat-button><a [routerLink]="['/create', id, i]">Edit</a></button> -->
+          
+        </mat-card-actions>
+      </mat-card>
+    
+    </div>
+
+    </div>
