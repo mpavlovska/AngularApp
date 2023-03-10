@@ -22,6 +22,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import { CardsComponent } from './cards/cards.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({ 
   declarations: [
@@ -32,7 +33,8 @@ import { CardsComponent } from './cards/cards.component';
     DetailsComponent,
     FormAddComponent,
     CardsComponent,
-    EventComponent
+    EventComponent,
+    FooterComponent
   ], 
   imports: [
     BrowserModule,
