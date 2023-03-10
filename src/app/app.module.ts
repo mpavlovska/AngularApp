@@ -14,6 +14,7 @@ import { DetailsComponent } from './details/details.component';
 import {MatCardModule} from '@angular/material/card'; 
 import { ContactComponent } from './contact/contact.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { FooterComponent } from './footer/footer.component';
 
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
@@ -34,6 +35,8 @@ import { CardsComponent } from './cards/cards.component';
     AboutUsComponent,
     DetailsComponent,
     ContactComponent,
+    FooterComponent
+  ],
     FormAddComponent,
     CardsComponent
   ], 

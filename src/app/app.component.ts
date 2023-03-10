@@ -14,11 +14,8 @@ import {ErrorStateMatcher} from '@angular/material/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent {
 
-  ngAfterViewInit() {
-      $('img[usemap]').maphilight();
-  }
   title = 'angularapp';
  
 }
