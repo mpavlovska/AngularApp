@@ -1,0 +1,25 @@
+.title{
+    font-size: 50px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: rgb(3, 48, 26);
+    text-shadow: rgb(26, 51, 31) 1px 0 10px;
+    margin-left: 15%
+    ;margin-bottom: 25px;
+}
+.slide-img {
+    width: 600px;
+    height: 400px;
+    border: 1px solid #ddd;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 150px;
+    
+  }
+  .carousel-wrapper-e{
+    display: flex;
+    height: 500px;
+    gap: 2.0em;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-top: 45px;
+  }
+  

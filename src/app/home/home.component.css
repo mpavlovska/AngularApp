@@ -4,7 +4,7 @@
     opacity: 70%;
     margin-top: 60px;
 
-   
+
 }
 
 
@@ -18,7 +18,7 @@
     right:0;
     opacity: 70%;
   }
-  
+
 
    /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
@@ -26,7 +26,7 @@
     width: 33.33%;
     padding: 5px;
   }
-  
+
   /* Clear floats after image containers */
   .row::after {
     content: "";
@@ -55,8 +55,8 @@
   border: 0;
   font-size: 16px;
   padding: 10px;
-  
-  
+
+
 }
 .contac :hover {
   background-color:#c4c4c4;
@@ -65,7 +65,7 @@
   transition-duration: 0.5s;
   transition-timing-function: ease;
   transition-delay: 0s;
-  
+
 }
 .nask{
   font-size: 50px;
@@ -73,8 +73,8 @@
   display: block;
   word-wrap: break-word;
   width: 350px;
- 
-  
+
+
 }
 
 .snask{
@@ -84,6 +84,5 @@
   word-wrap: break-word;
   width:350px;
   text-align: center;
-  
-}
 
+}

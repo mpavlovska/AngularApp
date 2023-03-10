@@ -2,8 +2,7 @@ import 'src/assets/js/jquery.maphilight.js';
 import { Component,AfterViewInit } from '@angular/core';
  
 declare var $: any;
-import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap/nav/nav.module';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; 
+
 import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
 
