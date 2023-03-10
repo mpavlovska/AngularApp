@@ -15,6 +15,7 @@ import { DetailsComponent } from './details/details.component';
 import {MatCardModule} from '@angular/material/card';
 import { ContactComponent } from './contact/contact.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     HomeComponent,
     AboutUsComponent,
     DetailsComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
