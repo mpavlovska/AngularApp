@@ -10,7 +10,7 @@
     /* margin-left: 20%; */
     width: 900px;
     display: inline-block;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 2px 300px 300px 2px;
     margin-top: 50px;
   }
@@ -30,6 +30,7 @@
 
   .left-text{
     /* width: 250px; */
+    margin-top: 30px;
     font-family: fantasy;
     margin-left: 20px;
     color: rgb(12, 62, 12);
@@ -37,3 +38,7 @@
   /* .img-car{
     width: 900px;
   } */
+  .nz{
+    padding-bottom: 250px;
+    color: white;
+  }

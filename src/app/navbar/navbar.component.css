@@ -5,3 +5,8 @@
 .mdc-tab--active .mdc-tab__text-label{
     color: rgb(79, 10, 75) !important;
 }
+
+.large-text{
+    font-size: 25px;
+    font-family: fantasy;
+}
