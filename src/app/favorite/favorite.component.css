@@ -1,4 +1,4 @@
-.example-card {
+ .example-card {
     max-width: 400px;
   }
   
@@ -24,7 +24,7 @@
     height: 200px;
     width: 300px;
   }
-
+/*
  * {
     margin: 0;
     padding: 0;
@@ -136,4 +136,4 @@ color: #fff;
     }
     #chkBox:checked + .mainContnt .box{
     transform: translateY(0);
-    }
+    } */
